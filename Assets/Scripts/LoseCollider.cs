@@ -10,18 +10,10 @@ using UnityEngine.SceneManagement;
 /// </summary>
 public class LoseCollider : MonoBehaviour
 {
+    [SerializeField] Object playerLoseScene;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        SceneManager.LoadScene(GetGameOverSceneIndex());
-        // SceneManager.LoadScene("Game Over");
-    }
-
-    /// <summary>
-    /// Gets the scene index for GameOver scene
-    /// </summary>
-    /// <returns>int index - the index of the GameOver scene</returns>
-    private int GetGameOverSceneIndex() 
-    {
-        return SceneManager.sceneCountInBuildSettings-1;
+        SceneManager.LoadScene(playerLoseScene.name);
     }
 }
