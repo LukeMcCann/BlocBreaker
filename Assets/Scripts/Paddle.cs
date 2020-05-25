@@ -20,7 +20,7 @@ public class Paddle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        setPaddlePosX(getMousePosXInUnits(minXPos, maxXPos));
+        paddlePos.x = getMousePosXInUnits(minXPos, maxXPos);
         transform.position = paddlePos;
     }
 
