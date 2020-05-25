@@ -131,5 +131,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   screenWidthInUnits: 16
-  minXPos: 1
-  maxXPos: 15
+  minXPos: 5.12
+  maxXPos: 10.85
