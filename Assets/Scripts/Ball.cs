@@ -25,11 +25,12 @@ public class Ball : MonoBehaviour
             StickToPaddle();
             LaunchOnMouseClick();
         }
+
     }
 
     private void Init() 
     {
-        paddleToBallVector = transform.position - paddle1.transform.position;
+        CalculatePaddleBallOffsetVector();
     }
 
     private void StickToPaddle() 
@@ -43,11 +44,17 @@ public class Ball : MonoBehaviour
         if(Input.GetMouseButtonDown(0)) 
         {
             hasStarted = true;
-            setVelocity(velocity.x, velocity.y);
+            SetVelocity(velocity.x, velocity.y);
         }
     }
 
-    private void setVelocity(float x, float y) {
+    private void SetVelocity(float x, float y) 
+    {
         GetComponent<Rigidbody2D>().velocity = new Vector2(x, y);
+    }
+
+    private void CalculatePaddleBallOffsetVector() 
+    {
+        paddleToBallVector = transform.position - paddle1.transform.position;
     }
 }
