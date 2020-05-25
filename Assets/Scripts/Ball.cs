@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
+    // Conf
     [SerializeField] Paddle paddle1;
     [SerializeField] Vector2 velocity;
+
+    // State
     private bool hasStarted = false;
     private Vector2 paddleToBallVector;
 
@@ -20,9 +23,8 @@ public class Ball : MonoBehaviour
     {
         if(!hasStarted) {
             StickToPaddle();
+            LaunchOnMouseClick();
         }
-        LaunchOnMouseClick();
-
     }
 
     private void Init() 
