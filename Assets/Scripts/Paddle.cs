@@ -14,23 +14,32 @@ public class Paddle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        init();
+        Init();
     }
 
     // Update is called once per frame
     void Update()
     {
-        paddlePos.x = getMousePosXInUnits(minXPos, maxXPos);
+        paddlePos.x = GetMousePosXInUnits(minXPos, maxXPos);
         transform.position = paddlePos;
     }
 
-    private void init() {
+    private void Init() {
         paddlePos = new Vector2(transform.position.x, transform.position.y);  
     }
 
     // Input
-    private float getMousePosXInUnits(float xMin, float xMax) {
+    private float GetMousePosXInUnits(float xMin, float xMax) {
         float mousePosX = Input.mousePosition.x / Screen.width * screenWidthInUnits;
         return Mathf.Clamp(mousePosX, xMin, xMax);
+    }
+
+    // Getters
+    public float GetPosX() {
+        return transform.position.x;
+    }
+
+    public float GetPosY() {
+        return transform.position.y;
     }
 }

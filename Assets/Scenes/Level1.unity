@@ -130,6 +130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 187559170}
   - component: {fileID: 187559169}
+  - component: {fileID: 187559171}
   m_Layer: 0
   m_Name: Lose Collider
   m_TagString: Untagged
@@ -177,6 +178,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &187559171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187559168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 284d16d0815879e4e9794b384971c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerLoseScene: {fileID: 102900000, guid: 30106868e4f8c69468a399eadb7d7cc2, type: 3}
 --- !u!1 &420159299
 GameObject:
   m_ObjectHideFlags: 0
@@ -188,6 +202,7 @@ GameObject:
   - component: {fileID: 420159301}
   - component: {fileID: 420159300}
   - component: {fileID: 420159302}
+  - component: {fileID: 420159303}
   m_Layer: 0
   m_Name: Paddle
   m_TagString: Untagged
@@ -252,7 +267,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 420159299}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.9488716, y: 0.24, z: 0}
+  m_LocalPosition: {x: 8, y: 0.24, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -294,6 +309,21 @@ PolygonCollider2D:
       - {x: 1, y: -0.25}
       - {x: 0.9971247, y: 0.041564032}
       - {x: 0.8129387, y: 0.120501116}
+--- !u!114 &420159303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420159299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dd547af365b044ab92d15a1d9cb427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  screenWidthInUnits: 16
+  minXPos: 1
+  maxXPos: 15
 --- !u!1 &578093162
 GameObject:
   m_ObjectHideFlags: 0
@@ -491,7 +521,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1093430944
 RectTransform:
   m_ObjectHideFlags: 0
@@ -928,7 +958,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1763713902}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
   m_Name: 
@@ -1034,6 +1064,7 @@ GameObject:
   - component: {fileID: 1881764953}
   - component: {fileID: 1881764955}
   - component: {fileID: 1881764956}
+  - component: {fileID: 1881764957}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -1098,7 +1129,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1881764952}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.02, y: 11.27, z: 0}
+  m_LocalPosition: {x: 8.02, y: 0.68, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1141,6 +1172,19 @@ CircleCollider2D:
   m_Offset: {x: 0.0045701265, y: 0.010967076}
   serializedVersion: 2
   m_Radius: 0.20725805
+--- !u!114 &1881764957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881764952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c842c122364031245b9dd686091d1bae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paddle1: {fileID: 420159303}
 --- !u!1 &1924844572
 GameObject:
   m_ObjectHideFlags: 0
@@ -1150,7 +1194,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1924844574}
-  - component: {fileID: 1924844573}
   m_Layer: 0
   m_Name: Gameplay
   m_TagString: Untagged
@@ -1158,18 +1201,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1924844573
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1924844572}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8164c2ab2eb5d3042a3d3bc664f54777, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1924844574
 Transform:
   m_ObjectHideFlags: 0
