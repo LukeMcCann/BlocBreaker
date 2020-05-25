@@ -44,15 +44,10 @@ public class Ball : MonoBehaviour
         if(Input.GetMouseButtonDown(0)) 
         {
             hasStarted = true;
-            SetVelocity(velocity.x, velocity.y);
+            GetComponent<Rigidbody2D>().velocity = new Vector2(velocity.x, velocity.y);
         }
     }
-
-    private void SetVelocity(float x, float y) 
-    {
-        GetComponent<Rigidbody2D>().velocity = new Vector2(x, y);
-    }
-
+    
     private void CalculatePaddleBallOffsetVector() 
     {
         paddleToBallVector = transform.position - paddle1.transform.position;
