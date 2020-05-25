@@ -14,7 +14,7 @@ public class Paddle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        paddlePos = new Vector2(transform.position.x, transform.position.y);  
+        init();
     }
 
     // Update is called once per frame
@@ -24,35 +24,39 @@ public class Paddle : MonoBehaviour
         transform.position = paddlePos;
     }
 
+    private void init() {
+        paddlePos = new Vector2(transform.position.x, transform.position.y);  
+    }
+
     // Input
     private float getMousePosXInUnits(float xMin, float xMax) {
         float mousePosX = Input.mousePosition.x / Screen.width * screenWidthInUnits;
         return Mathf.Clamp(mousePosX, xMin, xMax);
     }
 
-    // Setters
-    public void setPaddlePosX(float posX) {
-        paddlePos.x = posX;
-    }
+    // // Setters
+    // public void setPaddlePosX(float posX) {
+    //     paddlePos.x = posX;
+    // }
 
-    public void setPaddlePosY(float posY) {
-        paddlePos.y = posY;
-    }
+    // public void setPaddlePosY(float posY) {
+    //     paddlePos.y = posY;
+    // }
 
-    public void setPaddlePos(float posX, float posY) {
-        paddlePos = new Vector2(posX, posY);
-    }
+    // public void setPaddlePos(float posX, float posY) {
+    //     paddlePos = new Vector2(posX, posY);
+    // }
 
-    // Getters
-    public float getPaddlePosY() {
-        return paddlePos.y;
-    }
+    // // Getters
+    // public float getPaddlePosY() {
+    //     return paddlePos.y;
+    // }
 
-    public float getPaddlePosX() {
-        return paddlePos.x;
-    }
+    // public float getPaddlePosX() {
+    //     return paddlePos.x;
+    // }
 
-    public Vector2 getPaddlePos() {
-        return paddlePos;
-    }
+    // public Vector2 getPaddlePos() {
+    //     return paddlePos;
+    // }
 }
