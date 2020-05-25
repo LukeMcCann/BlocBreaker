@@ -5,7 +5,9 @@ using UnityEngine;
 public class Ball : MonoBehaviour
 {
     [SerializeField] Paddle paddle1;
-    Vector2 paddleToBallVector;
+    [SerializeField] Vector2 velocity;
+    private bool hasStarted = false;
+    private Vector2 paddleToBallVector;
 
     // Start is called before the first frame update
     void Start()
@@ -16,7 +18,11 @@ public class Ball : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        stickToPaddle();
+        if(!hasStarted) {
+            StickToPaddle();
+        }
+        LaunchOnMouseClick();
+
     }
 
     private void Init() 
@@ -24,9 +30,22 @@ public class Ball : MonoBehaviour
         paddleToBallVector = transform.position - paddle1.transform.position;
     }
 
-    private void stickToPaddle() 
+    private void StickToPaddle() 
     {
         Vector2 paddlePos = new Vector2(paddle1.GetPosX(), paddle1.GetPosY());
         transform.position = paddlePos + paddleToBallVector;
+    }
+
+    private void LaunchOnMouseClick() 
+    {
+        if(Input.GetMouseButtonDown(0)) 
+        {
+            hasStarted = true;
+            setVelocity(velocity.x, velocity.y);
+        }
+    }
+
+    private void setVelocity(float x, float y) {
+        GetComponent<Rigidbody2D>().velocity = new Vector2(x, y);
     }
 }
