@@ -10,13 +10,13 @@ public class Block : MonoBehaviour
     // Cached References
     private Level level;
 
+    GameStatus playStatus;
+
     int i = 0;
 
     // Start is called before the first frame update
     void Start()
     {       
-        level = FindObjectOfType<Level>();
-        level.CountBreakableBlock();
         Init();
     }
 
@@ -26,8 +26,10 @@ public class Block : MonoBehaviour
 
     private void Init() 
     {
+        level = FindObjectOfType<Level>();
+        level.CountBreakableBlock();
+        playStatus = FindObjectOfType<GameStatus>();
         camera = Camera.main;
-
     }
 
     private void OnCollisionEnter2D(Collision2D collisionInfo)
@@ -45,6 +47,7 @@ public class Block : MonoBehaviour
     {
         PlayDestructionSound(); 
         level.BlockDestroyed();
-        Destroy(this.gameObject);  
+        Destroy(this.gameObject);
+        playStatus.incrementScore();
     }
 }
