@@ -10,4 +10,9 @@ public class Level : MonoBehaviour
     {
         breakableBlocksCount++;
     }
+
+    public void blockDestroyed() 
+    {
+        breakableBlocksCount--;
+    }
 }
