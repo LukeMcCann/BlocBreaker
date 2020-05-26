@@ -11,7 +11,6 @@ public class Ball : MonoBehaviour
     // State
     private bool hasStarted = false;
     private Vector2 paddleToBallVector;
-    private AudioSource audio;
 
     // Start is called before the first frame update
     void Start()
@@ -57,7 +56,6 @@ public class Ball : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collisionInfo)
     {
-        GameObject other = collisionInfo.gameObject;
         if(hasStarted)
         {
             GetComponent<AudioSource>().Play();
