@@ -1222,26 +1222,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1503929042}
-    - target: {fileID: 1228891434, guid: 4d5d306bc91a8c940963fcf7fcfb3a67, type: 3}
-      propertyPath: m_text
-      value: 'Score: 0000'
-      objectReference: {fileID: 0}
-    - target: {fileID: 1228891434, guid: 4d5d306bc91a8c940963fcf7fcfb3a67, type: 3}
-      propertyPath: m_firstOverflowCharacterIndex
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1228891434, guid: 4d5d306bc91a8c940963fcf7fcfb3a67, type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 1228891434, guid: 4d5d306bc91a8c940963fcf7fcfb3a67, type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1228891434, guid: 4d5d306bc91a8c940963fcf7fcfb3a67, type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d5d306bc91a8c940963fcf7fcfb3a67, type: 3}
 --- !u!1001 &7629115082033463040
@@ -1409,11 +1389,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Game Status
-      objectReference: {fileID: 0}
-    - target: {fileID: 7903356545080917877, guid: 18d90130931358840973ff7146146291,
-        type: 3}
-      propertyPath: m_TagString
-      value: Score
       objectReference: {fileID: 0}
     - target: {fileID: 7903356545080917876, guid: 18d90130931358840973ff7146146291,
         type: 3}
