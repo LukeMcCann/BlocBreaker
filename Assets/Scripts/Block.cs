@@ -5,10 +5,16 @@ using UnityEngine;
 public class Block : MonoBehaviour
 {
     [SerializeField] AudioClip destructionSound;
+    private Camera camera;
     // Start is called before the first frame update
     void Start()
     {
-        
+        init();
+    }
+
+    private void init() 
+    {
+        camera = Camera.main;
     }
 
     // Update is called once per frame
@@ -22,8 +28,9 @@ public class Block : MonoBehaviour
         Destroy(this.gameObject);   
     }
 
-    private void playDestructionSound() {
+    private void playDestructionSound() 
+    {
         AudioSource.PlayClipAtPoint(destructionSound, 
-        new Vector2(this.transform.position.x, this.transform.position.y));
+        new Vector2(camera.transform.position.x, camera.transform.position.y));
     }
 }

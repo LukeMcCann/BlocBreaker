@@ -68,6 +68,6 @@ public class Ball : MonoBehaviour
     }
 
     private AudioClip getRandomBallCollisionSound() {
-        return ballCollisionSounds[UnityEngine.Random.Range(0, ballCollisionSounds.Length+1)];
+        return ballCollisionSounds[UnityEngine.Random.Range(0, ballCollisionSounds.Length)];
     }
 }
