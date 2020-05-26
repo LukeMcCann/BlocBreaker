@@ -134,7 +134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paddle1: {fileID: 0}
-  velocity: {x: 1, y: 15}
+  velocity: {x: 1, y: 10}
   ballCollisionSounds:
   - {fileID: 8300000, guid: 3f6a770e239bb8746a8ab01b9941b63b, type: 3}
   - {fileID: 8300000, guid: ae617fccf86710b4ea6967f615a5ae0f, type: 3}
