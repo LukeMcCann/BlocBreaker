@@ -5,7 +5,6 @@ using UnityEngine;
 public class Block : MonoBehaviour
 {
     [SerializeField] AudioClip destructionSound;
-    [SerializeField] int DebugToolBlocksToDestroy;
     private Camera camera;
 
     // Cached References
@@ -42,7 +41,7 @@ public class Block : MonoBehaviour
         new Vector2(camera.transform.position.x, camera.transform.position.y));
     }
 
-    private void DestroyBlock() 
+    public void DestroyBlock() 
     {
         PlayDestructionSound(); 
         level.BlockDestroyed();

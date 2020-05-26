@@ -27,4 +27,10 @@ public class Level : MonoBehaviour
             sceneLoader.LoadNextScene();
         }
     }
+
+    public int GetBlockCount() 
+    {
+        return this.breakableBlocksCount;
+    }
+    
 }
