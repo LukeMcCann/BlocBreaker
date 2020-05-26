@@ -7,10 +7,14 @@ public class Ball : MonoBehaviour
     // Conf
     [SerializeField] Paddle paddle1;
     [SerializeField] Vector2 velocity;
+    [SerializeField] AudioClip[] ballCollisionSounds;
 
     // State
     private bool hasStarted = false;
     private Vector2 paddleToBallVector;
+
+    // Cached References
+    private AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +36,7 @@ public class Ball : MonoBehaviour
     private void Init() 
     {
         CalculatePaddleBallOffsetVector();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void StickToPaddle() 
@@ -58,7 +63,11 @@ public class Ball : MonoBehaviour
     {
         if(hasStarted)
         {
-            GetComponent<AudioSource>().Play();
+            audioSource.PlayOneShot(getRandomBallCollisionSound());
         }
+    }
+
+    private AudioClip getRandomBallCollisionSound() {
+        return ballCollisionSounds[UnityEngine.Random.Range(0, ballCollisionSounds.Length+1)];
     }
 }
