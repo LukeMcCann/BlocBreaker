@@ -63,11 +63,11 @@ public class Ball : MonoBehaviour
     {
         if(hasStarted)
         {
-            audioSource.PlayOneShot(getRandomBallCollisionSound());
+            audioSource.PlayOneShot(GetRandomBallCollisionSound());
         }
     }
 
-    private AudioClip getRandomBallCollisionSound() {
+    private AudioClip GetRandomBallCollisionSound() {
         return ballCollisionSounds[UnityEngine.Random.Range(0, ballCollisionSounds.Length)];
     }
 }

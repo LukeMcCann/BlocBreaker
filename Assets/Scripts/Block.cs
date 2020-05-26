@@ -6,15 +6,21 @@ public class Block : MonoBehaviour
 {
     [SerializeField] AudioClip destructionSound;
     private Camera camera;
+
+    // Cached References
+    private Level level;
+
     // Start is called before the first frame update
     void Start()
     {
-        init();
+        Init();
+        level.CountBreakableBlock();
     }
 
-    private void init() 
+    private void Init() 
     {
         camera = Camera.main;
+        level = FindObjectOfType<Level>();
     }
 
     // Update is called once per frame
@@ -24,11 +30,11 @@ public class Block : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collisionInfo)
     {
-        playDestructionSound();
+        PlayDestructionSound();
         Destroy(this.gameObject);   
     }
 
-    private void playDestructionSound() 
+    private void PlayDestructionSound() 
     {
         AudioSource.PlayClipAtPoint(destructionSound, 
         new Vector2(camera.transform.position.x, camera.transform.position.y));
