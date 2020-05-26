@@ -30,13 +30,15 @@ public class GameStatus : MonoBehaviour
 
     private void SetScoreText() {
         if(score < 10) {
-            scoreText.text = "Score: 000 "+score;
+            scoreText.text = "Score:\n0000" + score;
         } else if(score >= 10 && score < 100) {
-            scoreText.text = "Score: 00 "+score;
+            scoreText.text = "Score:\n000" + score;
         } else if(score >= 100 && score < 1000) {
-            scoreText.text = "Score: 0 "+score;
-        } else if(score >= 1000) {
-            scoreText.text = "Score: "+score;
+            scoreText.text = "Score:\n00"+score;
+        } else if(score >= 1000 && score < 10000) {
+            scoreText.text = "Score:\n0"+score;
+        } else if(score >= 10000) {
+            scoreText.text = "Score:\n"+score;
         }
 
     }
