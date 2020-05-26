@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Level : MonoBehaviour
 {
+    [SerializeField] AudioClip levelCompleteSound;
     [SerializeField] private int breakableBlocksCount;
+    [SerializeField] int sceneLoadTime = 3;
 
     // Cached References
     SceneLoader sceneLoader;
@@ -16,7 +18,6 @@ public class Level : MonoBehaviour
     public void CountBreakableBlock() 
     {
         breakableBlocksCount++;
-        
     }
 
     public void BlockDestroyed() 
@@ -27,6 +28,12 @@ public class Level : MonoBehaviour
             sceneLoader.LoadNextScene();
         }
     }
+
+     private IEnumerator WaitForSceneLoad(int seconds) 
+     {
+        yield return new WaitForSeconds(seconds);
+        sceneLoader.LoadNextScene();
+     }
 
     public int GetBlockCount() 
     {

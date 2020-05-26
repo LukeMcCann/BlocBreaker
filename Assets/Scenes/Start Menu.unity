@@ -980,6 +980,16 @@ PrefabInstance:
       propertyPath: BypassEffects
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7718762544815396575, guid: 1309f52b0c28f4f4b826daec3ac5e914,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: fadcda8d81476b44386e1e893a35bb98, type: 3}
+    - target: {fileID: 7718762544815396575, guid: 1309f52b0c28f4f4b826daec3ac5e914,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.538
+      objectReference: {fileID: 0}
     - target: {fileID: 7718762544815396569, guid: 1309f52b0c28f4f4b826daec3ac5e914,
         type: 3}
       propertyPath: tag
