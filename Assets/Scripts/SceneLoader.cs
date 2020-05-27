@@ -20,7 +20,7 @@ public class SceneLoader : MonoBehaviour {
 
     public void LoadStartScene()
     {
-        gameStatus.ResetScore();
+        gameStatus.Reset();
         SceneManager.LoadScene(0);
     }
 

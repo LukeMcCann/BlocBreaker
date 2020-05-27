@@ -39,10 +39,9 @@ public class GameStatus : MonoBehaviour
         SetScoreText();
     }
 
-    public void ResetScore() 
+    public void Reset() 
     {
-        score = 0;
-        SetScoreText();
+        Destroy(this.gameObject);
     }
 
     private void SetScoreText() {
