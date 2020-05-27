@@ -8,6 +8,7 @@ public class GameStatus : MonoBehaviour
     [Range(0.1f, 10f)] [SerializeField] float playSpeed = 1f;
     [SerializeField] int score = 0;
     [SerializeField] TextMeshProUGUI scoreText;
+    [SerializeField] private bool isAutoPlayeEnabled = false;    
     [Range(0, 100)] [SerializeField] int pointsPerBlock = 10;
 
     void Awake() 
@@ -31,6 +32,11 @@ public class GameStatus : MonoBehaviour
     void Update()
     {
         Time.timeScale = playSpeed;
+    }
+
+    public bool IsAutoPlayEnabled() 
+    {
+        return isAutoPlayeEnabled;
     }
 
     public void incrementScore() 
