@@ -945,110 +945,220 @@ PrefabInstance:
       propertyPath: destructionSound
       value: 
       objectReference: {fileID: 8300000, guid: d36d5a66e3bcb104f992aade016c030d, type: 3}
+    - target: {fileID: 7909155870394167144, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
+      propertyPath: blockSparkleVFX
+      value: 
+      objectReference: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
     - target: {fileID: 7909155870435424889, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
+      propertyPath: destructionSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d36d5a66e3bcb104f992aade016c030d, type: 3}
+    - target: {fileID: 7909155870435424889, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
+      propertyPath: blockSparkleVFX
+      value: 
+      objectReference: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+    - target: {fileID: 7909155870446919160, guid: fee49c607fae2e745a19603eb34de008,
         type: 3}
       propertyPath: destructionSound
       value: 
       objectReference: {fileID: 8300000, guid: d36d5a66e3bcb104f992aade016c030d, type: 3}
     - target: {fileID: 7909155870446919160, guid: fee49c607fae2e745a19603eb34de008,
         type: 3}
+      propertyPath: blockSparkleVFX
+      value: 
+      objectReference: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+    - target: {fileID: 7909155870501488791, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
       propertyPath: destructionSound
       value: 
       objectReference: {fileID: 8300000, guid: d36d5a66e3bcb104f992aade016c030d, type: 3}
     - target: {fileID: 7909155870501488791, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
+      propertyPath: blockSparkleVFX
+      value: 
+      objectReference: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+    - target: {fileID: 7909155870518442987, guid: fee49c607fae2e745a19603eb34de008,
         type: 3}
       propertyPath: destructionSound
       value: 
       objectReference: {fileID: 8300000, guid: d36d5a66e3bcb104f992aade016c030d, type: 3}
     - target: {fileID: 7909155870518442987, guid: fee49c607fae2e745a19603eb34de008,
         type: 3}
+      propertyPath: blockSparkleVFX
+      value: 
+      objectReference: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+    - target: {fileID: 7909155870590364241, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
       propertyPath: destructionSound
       value: 
       objectReference: {fileID: 8300000, guid: d36d5a66e3bcb104f992aade016c030d, type: 3}
     - target: {fileID: 7909155870590364241, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
+      propertyPath: blockSparkleVFX
+      value: 
+      objectReference: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+    - target: {fileID: 7909155870592990704, guid: fee49c607fae2e745a19603eb34de008,
         type: 3}
       propertyPath: destructionSound
       value: 
       objectReference: {fileID: 8300000, guid: d36d5a66e3bcb104f992aade016c030d, type: 3}
     - target: {fileID: 7909155870592990704, guid: fee49c607fae2e745a19603eb34de008,
         type: 3}
+      propertyPath: blockSparkleVFX
+      value: 
+      objectReference: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+    - target: {fileID: 7909155870597523777, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
       propertyPath: destructionSound
       value: 
       objectReference: {fileID: 8300000, guid: d36d5a66e3bcb104f992aade016c030d, type: 3}
     - target: {fileID: 7909155870597523777, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
+      propertyPath: blockSparkleVFX
+      value: 
+      objectReference: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+    - target: {fileID: 7909155870634665829, guid: fee49c607fae2e745a19603eb34de008,
         type: 3}
       propertyPath: destructionSound
       value: 
       objectReference: {fileID: 8300000, guid: d36d5a66e3bcb104f992aade016c030d, type: 3}
     - target: {fileID: 7909155870634665829, guid: fee49c607fae2e745a19603eb34de008,
         type: 3}
+      propertyPath: blockSparkleVFX
+      value: 
+      objectReference: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+    - target: {fileID: 7909155870767967205, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
       propertyPath: destructionSound
       value: 
       objectReference: {fileID: 8300000, guid: d36d5a66e3bcb104f992aade016c030d, type: 3}
     - target: {fileID: 7909155870767967205, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
+      propertyPath: blockSparkleVFX
+      value: 
+      objectReference: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+    - target: {fileID: 7909155870780060856, guid: fee49c607fae2e745a19603eb34de008,
         type: 3}
       propertyPath: destructionSound
       value: 
       objectReference: {fileID: 8300000, guid: d36d5a66e3bcb104f992aade016c030d, type: 3}
     - target: {fileID: 7909155870780060856, guid: fee49c607fae2e745a19603eb34de008,
         type: 3}
+      propertyPath: blockSparkleVFX
+      value: 
+      objectReference: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+    - target: {fileID: 7909155870876064465, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
       propertyPath: destructionSound
       value: 
       objectReference: {fileID: 8300000, guid: d36d5a66e3bcb104f992aade016c030d, type: 3}
     - target: {fileID: 7909155870876064465, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
+      propertyPath: blockSparkleVFX
+      value: 
+      objectReference: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+    - target: {fileID: 7909155870877509553, guid: fee49c607fae2e745a19603eb34de008,
         type: 3}
       propertyPath: destructionSound
       value: 
       objectReference: {fileID: 8300000, guid: d36d5a66e3bcb104f992aade016c030d, type: 3}
     - target: {fileID: 7909155870877509553, guid: fee49c607fae2e745a19603eb34de008,
         type: 3}
+      propertyPath: blockSparkleVFX
+      value: 
+      objectReference: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+    - target: {fileID: 7909155870926487571, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
       propertyPath: destructionSound
       value: 
       objectReference: {fileID: 8300000, guid: d36d5a66e3bcb104f992aade016c030d, type: 3}
     - target: {fileID: 7909155870926487571, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
+      propertyPath: blockSparkleVFX
+      value: 
+      objectReference: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+    - target: {fileID: 7909155871054363177, guid: fee49c607fae2e745a19603eb34de008,
         type: 3}
       propertyPath: destructionSound
       value: 
       objectReference: {fileID: 8300000, guid: d36d5a66e3bcb104f992aade016c030d, type: 3}
     - target: {fileID: 7909155871054363177, guid: fee49c607fae2e745a19603eb34de008,
         type: 3}
+      propertyPath: blockSparkleVFX
+      value: 
+      objectReference: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+    - target: {fileID: 7909155871094744368, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
       propertyPath: destructionSound
       value: 
       objectReference: {fileID: 8300000, guid: d36d5a66e3bcb104f992aade016c030d, type: 3}
     - target: {fileID: 7909155871094744368, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
+      propertyPath: blockSparkleVFX
+      value: 
+      objectReference: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+    - target: {fileID: 7909155871211442085, guid: fee49c607fae2e745a19603eb34de008,
         type: 3}
       propertyPath: destructionSound
       value: 
       objectReference: {fileID: 8300000, guid: d36d5a66e3bcb104f992aade016c030d, type: 3}
     - target: {fileID: 7909155871211442085, guid: fee49c607fae2e745a19603eb34de008,
         type: 3}
+      propertyPath: blockSparkleVFX
+      value: 
+      objectReference: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+    - target: {fileID: 7909155871254579637, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
       propertyPath: destructionSound
       value: 
       objectReference: {fileID: 8300000, guid: d36d5a66e3bcb104f992aade016c030d, type: 3}
     - target: {fileID: 7909155871254579637, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
+      propertyPath: blockSparkleVFX
+      value: 
+      objectReference: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+    - target: {fileID: 7909155871516285645, guid: fee49c607fae2e745a19603eb34de008,
         type: 3}
       propertyPath: destructionSound
       value: 
       objectReference: {fileID: 8300000, guid: d36d5a66e3bcb104f992aade016c030d, type: 3}
     - target: {fileID: 7909155871516285645, guid: fee49c607fae2e745a19603eb34de008,
         type: 3}
+      propertyPath: blockSparkleVFX
+      value: 
+      objectReference: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+    - target: {fileID: 7909155871667817166, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
       propertyPath: destructionSound
       value: 
       objectReference: {fileID: 8300000, guid: d36d5a66e3bcb104f992aade016c030d, type: 3}
     - target: {fileID: 7909155871667817166, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
+      propertyPath: blockSparkleVFX
+      value: 
+      objectReference: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+    - target: {fileID: 7909155871763764414, guid: fee49c607fae2e745a19603eb34de008,
         type: 3}
       propertyPath: destructionSound
       value: 
       objectReference: {fileID: 8300000, guid: d36d5a66e3bcb104f992aade016c030d, type: 3}
     - target: {fileID: 7909155871763764414, guid: fee49c607fae2e745a19603eb34de008,
         type: 3}
-      propertyPath: destructionSound
+      propertyPath: blockSparkleVFX
       value: 
-      objectReference: {fileID: 8300000, guid: d36d5a66e3bcb104f992aade016c030d, type: 3}
+      objectReference: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
     - target: {fileID: 7909155871993658143, guid: fee49c607fae2e745a19603eb34de008,
         type: 3}
       propertyPath: destructionSound
       value: 
       objectReference: {fileID: 8300000, guid: d36d5a66e3bcb104f992aade016c030d, type: 3}
+    - target: {fileID: 7909155871993658143, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
+      propertyPath: blockSparkleVFX
+      value: 
+      objectReference: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fee49c607fae2e745a19603eb34de008, type: 3}
