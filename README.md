@@ -12,7 +12,9 @@
 Original take on a classic block-breaking game. Anime-themed block breaker, to play 
 [click here](https://404NotFound)
 
-or clone this repository and double click the index.html file into your browser. 
+If the link does not work check the repository, if there is no index.html the project requires building.
+
+Alternatively, you may clone this repository and double click the index.html file or drag index.html into your browser. 
 
 
 ### Developer Tools / Review Tools
