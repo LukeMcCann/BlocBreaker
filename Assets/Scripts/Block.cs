@@ -49,11 +49,16 @@ public class Block : MonoBehaviour
     {
         if(tag == "Breakable") 
         {
-            timesHit++;
-            if(timesHit >= maxHits)
-            {
-                DestroyBlock();
-            }
+            HandleBlockHit();
+        }
+    }
+
+    private void HandleBlockHit() 
+    {
+        timesHit++;
+        if(timesHit >= maxHits)
+        {
+            DestroyBlock();
         }
     }
 
