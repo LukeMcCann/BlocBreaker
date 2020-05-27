@@ -9,6 +9,7 @@ public class Block : MonoBehaviour
     [SerializeField] float particleLifeSpan = 2.0f;
     [SerializeField] int maxHits = 3;
     [SerializeField] private int timesHit; // only serialized for debug
+    [SerializeField] Sprite[] hitSprites;
     
     private Camera camera;
 
@@ -59,7 +60,15 @@ public class Block : MonoBehaviour
         if(timesHit >= maxHits)
         {
             DestroyBlock();
+        } else {
+            ShowNextHitSprite();
         }
+    }
+
+    private void ShowNextHitSprite() 
+    {
+        int spriteIndex = timesHit-1;
+        GetComponent<SpriteRenderer>().sprite = hitSprites[spriteIndex];
     }
 
     private void PlayDestructionSound() 

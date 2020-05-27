@@ -123,3 +123,8 @@ MonoBehaviour:
   destructionSound: {fileID: 8300000, guid: d36d5a66e3bcb104f992aade016c030d, type: 3}
   blockSparkleVFX: {fileID: 0}
   particleLifeSpan: 2
+  maxHits: 3
+  timesHit: 0
+  hitSprites:
+  - {fileID: 21300000, guid: 61ff5555433de9147a9366d3198a56b4, type: 3}
+  - {fileID: 21300000, guid: f47335726dd54ab42a33313c06f29804, type: 3}

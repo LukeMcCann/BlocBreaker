@@ -202,6 +202,11 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1310960718145184181, guid: de5db6b5441614249bb1bc63b9c17110,
+        type: 3}
+      propertyPath: maxHits
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de5db6b5441614249bb1bc63b9c17110, type: 3}
 --- !u!4 &29450470 stripped
@@ -450,6 +455,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.b
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1310960718145184181, guid: de5db6b5441614249bb1bc63b9c17110,
+        type: 3}
+      propertyPath: maxHits
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de5db6b5441614249bb1bc63b9c17110, type: 3}
@@ -895,6 +905,11 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0.8745099
       objectReference: {fileID: 0}
+    - target: {fileID: 1310960718145184181, guid: de5db6b5441614249bb1bc63b9c17110,
+        type: 3}
+      propertyPath: maxHits
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de5db6b5441614249bb1bc63b9c17110, type: 3}
 --- !u!4 &629856926 stripped
@@ -1060,6 +1075,11 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0.8745099
       objectReference: {fileID: 0}
+    - target: {fileID: 1310960718145184181, guid: de5db6b5441614249bb1bc63b9c17110,
+        type: 3}
+      propertyPath: maxHits
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de5db6b5441614249bb1bc63b9c17110, type: 3}
 --- !u!4 &1348223951 stripped
@@ -1149,6 +1169,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.b
       value: 0.37973848
+      objectReference: {fileID: 0}
+    - target: {fileID: 1310960718145184181, guid: de5db6b5441614249bb1bc63b9c17110,
+        type: 3}
+      propertyPath: maxHits
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de5db6b5441614249bb1bc63b9c17110, type: 3}
@@ -1285,6 +1310,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.b
       value: 0.37973848
+      objectReference: {fileID: 0}
+    - target: {fileID: 1310960718145184181, guid: de5db6b5441614249bb1bc63b9c17110,
+        type: 3}
+      propertyPath: maxHits
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de5db6b5441614249bb1bc63b9c17110, type: 3}
