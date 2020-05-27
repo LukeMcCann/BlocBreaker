@@ -10,7 +10,7 @@
 
 
 Original take on a classic block-breaking game. Anime-themed block breaker, to play 
-[click here](https://404NotFound)
+[click here](https://lukemccann.github.io/BlocBreaker)
 
 If the link does not work check the repository, if there is no index.html the project requires building.
 
