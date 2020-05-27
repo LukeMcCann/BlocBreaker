@@ -6,6 +6,7 @@ public class Block : MonoBehaviour
 {
     [SerializeField] AudioClip destructionSound;
     [SerializeField] GameObject blockSparkleVFX;
+    [SerializeField] float particleLifeSpan = 2.0f;
     private Camera camera;
 
     // Cached References
@@ -56,5 +57,6 @@ public class Block : MonoBehaviour
     private void TriggerSparkleVFX() 
     {
         GameObject sparkleVFX = Instantiate(blockSparkleVFX, transform.position, transform.rotation);
+        Destroy(sparkleVFX, particleLifeSpan);
     }
 }
