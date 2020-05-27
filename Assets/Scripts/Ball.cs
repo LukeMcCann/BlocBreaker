@@ -12,9 +12,12 @@ public class Ball : MonoBehaviour
     // State
     private bool hasStarted = false;
     private Vector2 paddleToBallVector;
+    [SerializeField] float randomFactor = 0.2f;
 
     // Cached References
     private AudioSource audioSource;
+
+    private Rigidbody2D rigidBody2D;
 
     // Start is called before the first frame update
     void Start()
@@ -37,6 +40,7 @@ public class Ball : MonoBehaviour
     {
         CalculatePaddleBallOffsetVector();
         audioSource = GetComponent<AudioSource>();
+        rigidBody2D = GetComponent<Rigidbody2D>();
     }
 
     private void StickToPaddle() 
@@ -50,7 +54,7 @@ public class Ball : MonoBehaviour
         if(Input.GetMouseButtonDown(0)) 
         {
             hasStarted = true;
-            GetComponent<Rigidbody2D>().velocity = new Vector2(velocity.x, velocity.y);
+            rigidBody2D.velocity = new Vector2(velocity.x, velocity.y);
         }
     }
     
@@ -61,10 +65,20 @@ public class Ball : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collisionInfo)
     {
+        Vector2 velocityTweak = CalculateRandomVelocity();
         if(hasStarted)
         {
             audioSource.PlayOneShot(GetRandomBallCollisionSound());
+            rigidBody2D.velocity += velocityTweak;
         }
+    }
+    
+
+    private Vector2 CalculateRandomVelocity() 
+    {
+        float x = Random.Range(0,randomFactor);
+        float y = Random.Range(0,randomFactor);
+        return new Vector2(x, y);
     }
 
     private AudioClip GetRandomBallCollisionSound() {

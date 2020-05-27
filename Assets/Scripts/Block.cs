@@ -10,15 +10,13 @@ public class Block : MonoBehaviour
     [SerializeField] int maxHits = 3;
     [SerializeField] private int timesHit; // only serialized for debug
     [SerializeField] Sprite[] hitSprites;
-    
-    private Camera camera;
 
     // Cached References
     private Level level;
 
     GameStatus playStatus;
+    private Camera camera;
 
-    int i = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -68,11 +66,20 @@ public class Block : MonoBehaviour
     private void ShowNextHitSprite() 
     {
         int spriteIndex = timesHit-1;
+        CheckIsValidSpriteIndex(spriteIndex);
         if(hitSprites[spriteIndex] != null )
         {
             GetComponent<SpriteRenderer>().sprite = hitSprites[spriteIndex];
         }
-        Debug.LogError("Block sprite is missing from array.");
+        Debug.LogError("Block sprite is missing from array: " + gameObject.name);
+    }
+
+    private void CheckIsValidSpriteIndex(int spriteIndex) 
+    {
+        if(spriteIndex >= hitSprites.Length) 
+        {
+            spriteIndex = spriteIndex--;
+        }
     }
 
     private void PlayDestructionSound() 
