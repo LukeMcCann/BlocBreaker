@@ -21,6 +21,24 @@ In this version review tools are left active to enable you to play through and e
 
 There are 7 levels currently, to switch level press "1,2,3,4,5,6, or 7" atop the keyboard to see the respective level. 
 
+### Game
+
+A fast-paced anime-themed Arkanoid style block-buster!
+
+The game offers a variety of levels, including "boss levels" in which the player can gain massive points by destroying a "Bloc-Art" image of popular anime characters.
+
+#### Current Boss Levels:
+![ScreenShot](images/charizard.png)
+![ScreenShot](images/rin.png)
+
+#### Normal Play
+![ScreenShot](images/levels.png)
+
+#### Menus
+![ScreenShot](images/start.png)
+![ScreenShot](images/gameOver.png)
+
+
 #### Liscences and Accreditations
 
 Font Liscence: 
