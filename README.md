@@ -29,14 +29,14 @@ The game offers a variety of levels, including "boss levels" in which the player
 
 #### Current Boss Levels:
 ![ScreenShot](images/charizard.PNG)
-![ScreenShot](https://raw.githubusercontent.com/LukeMcCann/BlocBreaker/master/images/rin.png)
+![ScreenShot](images/rin.PNG)
 
 #### Normal Play
-![ScreenShot](https://raw.githubusercontent.com/LukeMcCann/BlocBreaker/master/images/levels.png)
+![ScreenShot](images/levels.PNG)
 
 #### Menus
-![ScreenShot](https://raw.githubusercontent.com/LukeMcCann/BlocBreaker/master/images/start.png)
-![ScreenShot](https://raw.githubusercontent.com/LukeMcCann/BlocBreaker/master/images/gameOver.png)
+![ScreenShot](images/start.PNG)
+![ScreenShot](images/gameOver.PNG)
 
 
 #### Liscences and Accreditations
