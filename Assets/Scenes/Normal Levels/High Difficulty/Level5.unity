@@ -201,6 +201,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3dd547af365b044ab92d15a1d9cb427, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &550670451
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 550670452}
+  m_Layer: 0
+  m_Name: Unbreakables
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &550670452
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550670451}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.561741, y: 6.278181, z: -214.592}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1408154836}
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1170343727
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -270,6 +301,86 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9687e9bc146cac8448a9b47423a0aa77, type: 3}
+--- !u!1001 &1408154835
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 550670452}
+    m_Modifications:
+    - target: {fileID: 7059808397552025759, guid: 25418fa712ac8b845b331ed6b0e54f56,
+        type: 3}
+      propertyPath: m_Name
+      value: Unbreakable Block (6) Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059808397552025753, guid: 25418fa712ac8b845b331ed6b0e54f56,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.2017407
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059808397552025753, guid: 25418fa712ac8b845b331ed6b0e54f56,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.13600063
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059808397552025753, guid: 25418fa712ac8b845b331ed6b0e54f56,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 214.592
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059808397552025753, guid: 25418fa712ac8b845b331ed6b0e54f56,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059808397552025753, guid: 25418fa712ac8b845b331ed6b0e54f56,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059808397552025753, guid: 25418fa712ac8b845b331ed6b0e54f56,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059808397552025753, guid: 25418fa712ac8b845b331ed6b0e54f56,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059808397552025753, guid: 25418fa712ac8b845b331ed6b0e54f56,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059808397552025753, guid: 25418fa712ac8b845b331ed6b0e54f56,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059808397552025753, guid: 25418fa712ac8b845b331ed6b0e54f56,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059808397552025753, guid: 25418fa712ac8b845b331ed6b0e54f56,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059808397552025753, guid: 25418fa712ac8b845b331ed6b0e54f56,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.6125
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 25418fa712ac8b845b331ed6b0e54f56, type: 3}
+--- !u!4 &1408154836 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7059808397552025753, guid: 25418fa712ac8b845b331ed6b0e54f56,
+    type: 3}
+  m_PrefabInstance: {fileID: 1408154835}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1688329826
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1156,6 +1267,146 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: d36d5a66e3bcb104f992aade016c030d, type: 3}
     - target: {fileID: 7909155871993658143, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
+      propertyPath: blockSparkleVFX
+      value: 
+      objectReference: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+    - target: {fileID: 7909155870394167150, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
+      propertyPath: m_TagString
+      value: Breakable
+      objectReference: {fileID: 0}
+    - target: {fileID: 7909155870435424895, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
+      propertyPath: m_TagString
+      value: Breakable
+      objectReference: {fileID: 0}
+    - target: {fileID: 7909155870446919166, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
+      propertyPath: m_TagString
+      value: Breakable
+      objectReference: {fileID: 0}
+    - target: {fileID: 7909155870501488789, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
+      propertyPath: m_TagString
+      value: Breakable
+      objectReference: {fileID: 0}
+    - target: {fileID: 7909155870518442991, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
+      propertyPath: m_TagString
+      value: Breakable
+      objectReference: {fileID: 0}
+    - target: {fileID: 7909155870590364247, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
+      propertyPath: m_TagString
+      value: Breakable
+      objectReference: {fileID: 0}
+    - target: {fileID: 7909155870592990710, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
+      propertyPath: m_TagString
+      value: Breakable
+      objectReference: {fileID: 0}
+    - target: {fileID: 7909155870597523782, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
+      propertyPath: m_TagString
+      value: Breakable
+      objectReference: {fileID: 0}
+    - target: {fileID: 7909155870634665818, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
+      propertyPath: m_TagString
+      value: Breakable
+      objectReference: {fileID: 0}
+    - target: {fileID: 7909155870767967195, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
+      propertyPath: m_TagString
+      value: Breakable
+      objectReference: {fileID: 0}
+    - target: {fileID: 7909155870780060862, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
+      propertyPath: m_TagString
+      value: Breakable
+      objectReference: {fileID: 0}
+    - target: {fileID: 7909155870876064470, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
+      propertyPath: m_TagString
+      value: Breakable
+      objectReference: {fileID: 0}
+    - target: {fileID: 7909155870877509559, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
+      propertyPath: m_TagString
+      value: Breakable
+      objectReference: {fileID: 0}
+    - target: {fileID: 7909155870926487569, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
+      propertyPath: m_TagString
+      value: Breakable
+      objectReference: {fileID: 0}
+    - target: {fileID: 7909155871054363182, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
+      propertyPath: m_TagString
+      value: Breakable
+      objectReference: {fileID: 0}
+    - target: {fileID: 7909155871094744369, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
+      propertyPath: m_TagString
+      value: Breakable
+      objectReference: {fileID: 0}
+    - target: {fileID: 7909155871254579627, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
+      propertyPath: m_TagString
+      value: Breakable
+      objectReference: {fileID: 0}
+    - target: {fileID: 7909155871516285635, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
+      propertyPath: m_TagString
+      value: Breakable
+      objectReference: {fileID: 0}
+    - target: {fileID: 7909155871667817167, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
+      propertyPath: m_TagString
+      value: Breakable
+      objectReference: {fileID: 0}
+    - target: {fileID: 7909155871763764415, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
+      propertyPath: m_TagString
+      value: Breakable
+      objectReference: {fileID: 0}
+    - target: {fileID: 7909155871993658141, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
+      propertyPath: m_TagString
+      value: Breakable
+      objectReference: {fileID: 0}
+    - target: {fileID: 7909155871211442074, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
+      propertyPath: m_TagString
+      value: Breakable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1949359718994383406, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
+      propertyPath: blockSparkleVFX
+      value: 
+      objectReference: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+    - target: {fileID: 3559017647493677998, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
+      propertyPath: blockSparkleVFX
+      value: 
+      objectReference: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+    - target: {fileID: 3559017648264223514, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
+      propertyPath: blockSparkleVFX
+      value: 
+      objectReference: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+    - target: {fileID: 5149947413630051069, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
+      propertyPath: blockSparkleVFX
+      value: 
+      objectReference: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+    - target: {fileID: 5149947413753070562, guid: fee49c607fae2e745a19603eb34de008,
+        type: 3}
+      propertyPath: blockSparkleVFX
+      value: 
+      objectReference: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+    - target: {fileID: 8498881027661403238, guid: fee49c607fae2e745a19603eb34de008,
         type: 3}
       propertyPath: blockSparkleVFX
       value: 

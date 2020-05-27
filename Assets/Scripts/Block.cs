@@ -7,6 +7,9 @@ public class Block : MonoBehaviour
     [SerializeField] AudioClip destructionSound;
     [SerializeField] GameObject blockSparkleVFX;
     [SerializeField] float particleLifeSpan = 2.0f;
+    [SerializeField] int maxHits = 3;
+    [SerializeField] private int timesHit; // only serialized for debug
+    
     private Camera camera;
 
     // Cached References
@@ -20,6 +23,7 @@ public class Block : MonoBehaviour
     void Start()
     {       
         Init();
+        CountBreakableBlocks();
     }
 
     void Update() 
@@ -28,15 +32,29 @@ public class Block : MonoBehaviour
 
     private void Init() 
     {
-        level = FindObjectOfType<Level>();
-        level.CountBreakableBlock();
-        playStatus = FindObjectOfType<GameStatus>();
         camera = Camera.main;
+        playStatus = FindObjectOfType<GameStatus>();
+    }
+
+    private void CountBreakableBlocks() 
+    {
+        level = FindObjectOfType<Level>();
+        if(tag == "Breakable") 
+        {
+            level.CountBlocks();
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collisionInfo)
     {
-        DestroyBlock();
+        if(tag == "Breakable") 
+        {
+            timesHit++;
+            if(timesHit >= maxHits)
+            {
+                DestroyBlock();
+            }
+        }
     }
 
     private void PlayDestructionSound() 

@@ -7,6 +7,8 @@ TagManager:
   - music
   - Continuous SFX
   - Score
+  - Breakable
+  - Unbreakable
   layers:
   - Default
   - TransparentFX
