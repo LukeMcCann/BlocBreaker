@@ -28,15 +28,15 @@ A fast-paced anime-themed Arkanoid style block-buster!
 The game offers a variety of levels, including "boss levels" in which the player can gain massive points by destroying a "Bloc-Art" image of popular anime characters.
 
 #### Current Boss Levels:
-![ScreenShot](images/charizard.png)
-![ScreenShot](images/rin.png)
+![ScreenShot](https://raw.githubusercontent.com/LukeMcCann/BlocBreaker/master/images/charizard.png)
+![ScreenShot](https://raw.githubusercontent.com/LukeMcCann/BlocBreaker/master/images/rin.png)
 
 #### Normal Play
-![ScreenShot](images/levels.png)
+![ScreenShot](https://raw.githubusercontent.com/LukeMcCann/BlocBreaker/master/images/levels.png)
 
 #### Menus
-![ScreenShot](images/start.png)
-![ScreenShot](images/gameOver.png)
+![ScreenShot](https://raw.githubusercontent.com/LukeMcCann/BlocBreaker/master/images/start.png)
+![ScreenShot](https://raw.githubusercontent.com/LukeMcCann/BlocBreaker/master/images/gameOver.png)
 
 
 #### Liscences and Accreditations
