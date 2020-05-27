@@ -7,18 +7,20 @@ public class Debugger : MonoBehaviour
     [SerializeField] int blocksToDestroy;
     // Start is called before the first frame update
     Level level;
+
+    GameStatus gameStatus;
     void Start()
     {
         level = FindObjectOfType<Level>();
+        gameStatus = FindObjectOfType<GameStatus>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.LeftAlt)) {
-            // DestroyBlocks(blocksToDestroy);
+        if(Input.GetKeyDown(KeyCode.LeftAlt)) 
+        {
             DestroyBlocks(level.GetBlockCount());
-
         }
     }
 

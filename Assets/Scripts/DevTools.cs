@@ -41,6 +41,10 @@ public class DevTools : MonoBehaviour
             sceneLoader.LoadScene(6);
         } else if(Input.GetKeyDown(KeyCode.Alpha7)) {
             sceneLoader.LoadScene(7);
+        } else if(Input.GetKeyDown(KeyCode.Alpha8)) {
+            sceneLoader.LoadScene(8);
+        } else if(Input.GetKeyDown(KeyCode.Alpha9)) {
+            sceneLoader.LoadScene(9);
         }
     }
 }

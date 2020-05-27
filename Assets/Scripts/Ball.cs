@@ -12,7 +12,7 @@ public class Ball : MonoBehaviour
     // State
     private bool hasStarted = false;
     private Vector2 paddleToBallVector;
-    [SerializeField] float randomFactor = 0.2f;
+    [SerializeField] float randomFactor = 1f;
 
     // Cached References
     private AudioSource audioSource;

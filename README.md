@@ -21,7 +21,7 @@ Alternatively, you may clone this repository and double click the index.html fil
 
 In this version review tools are left active to enable you to play through and experience each level. Please leave me a note if any levels appear to difficult.
 
-There are 7 levels currently, to switch level press "1,2,3,4,5,6, or 7" atop the keyboard to see the respective level. 
+There are 7 levels currently, to switch level press "1 - 9" atop the keyboard to see the respective level. 
 
 ### Game
 

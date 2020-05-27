@@ -10,10 +10,9 @@ using UnityEngine.SceneManagement;
 /// </summary>
 public class LoseCollider : MonoBehaviour
 {
-    [SerializeField] Object playerLoseScene;
-
+    [SerializeField] int gameOverSceneBuildNumber = 10;
     private void OnTriggerEnter2D(Collider2D other)
     {
-        SceneManager.LoadScene(playerLoseScene.name);
+        SceneManager.LoadScene(gameOverSceneBuildNumber);
     }
 }
